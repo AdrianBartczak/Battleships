@@ -1,0 +1,222 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:background="@drawable/bg"
+    android:clickable="false"
+    android:gravity="center"
+    tools:context="com.example.pum2z1.ActivityGracz1" >
+
+    <LinearLayout
+        android:id="@+id/glownyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/widokGracz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="top" >
+
+        <GridLayout
+            android:id="@+id/siatkaPlanszyMoja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="10"
+            android:rowCount="10" >
+
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/siatkaPlanszyPrzeciwnika"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="10"
+            android:rowCount="10" >
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/widokGracz2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <GridLayout
+            android:id="@+id/siatkaPlanszyGracz2Moja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="10"
+            android:rowCount="10" >
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/siatkaPlanszyGracz2Przeciwnika"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="10"
+            android:rowCount="10" >
+        </GridLayout>
+
+    </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutPrzyciskow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layoutKtoryGracz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/wievtytgracz2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gracz2tytul"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/wievtytgracz1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gracz1tytul"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/layoutLicznaPozostalychStatkow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" 
+                    android:orientation="vertical">
+                
+                <TextView
+                        android:id="@+id/textViewTrybWidokuPlanszy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/yellow"
+                        android:text="@string/labelTrybUstawiena"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textViewLiczbaPozostalychStatkowWroga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wsp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/zapisz"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_height="41dp"
+                    android:layout_width="wrap_content"
+                    android:onClick="zapiszStanGry"
+                    android:text="@string/labelZapiszStanGry" />
+
+                <Button
+                    android:id="@+id/btnlosujStatki"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="41dp"
+                    android:onClick="losujPolozenie"
+                    android:text="@string/labelLosujPolozenie" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/napisX" />
+            
+            <TextView
+                android:id="@+id/wspX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="" />
+            
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/napisY" />
+
+            <TextView
+                android:id="@+id/wspY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+            
+        </LinearLayout>
+        
+       <LinearLayout
+           android:id="@+id/buttony"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:gravity="center"
+           android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/oddajStrzal"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pal"
+            android:clickable="false"
+            android:onClick="oddajStrzal"/>
+        
+        <Button
+            android:id="@+id/przelaczPlansze"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pokazPlansze"
+        	android:onClick="przelaczPlansze"/>
+        
+        <Button
+           
+            android:id="@+id/koniecTury"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="nastepnyGracz"
+            android:clickable="false"
+            android:text="@string/kolejnaTura" />
+
+       </LinearLayout>
+       
+       
+        </LinearLayout>
+    
+
+</RelativeLayout>
+
+
+ 

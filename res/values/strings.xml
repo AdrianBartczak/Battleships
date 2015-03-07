@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PUM2z1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="brak">bz</string>
+    <string name="action_settings">Settings</string>
+    <string name="napisX">X : </string>
+    <string name="pal">Strzelaj</string>
+    <string name="napisY">Y : </string>
+    <string name="pokazPlansze">Przełącz widok</string>
+    <string name="kolejnaTura">Kolejna Tura</string>
+    <string name="title_activity_glowne">GlowneActivity</string>
+    <string name="nowagra">Nowa Gra</string>
+    <string name="gracz1tytul">GRACZ 1</string>
+    <string name="gracz2tytul">GRACZ 2</string>
+    <string name="labelLiczbaPozostalychStatkow">Liczba statków wroga: </string>
+    <string name="labelLosujPolozenie">losuj położenie</string>
+    <string name="labelTrybUstawiena">TRYB USTAWIANIA STATKÓW</string>
+    <string name="title_activity_activity_gracz2">ActivityGracz2</string>
+    <string name="title_activity_database_activity">Database_activity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="labelbazadanych">Baza danych</string><string name="labelZapiszStanGry">zapisz</string><string name="labelNazwaZapisu">Podaj nazwe zapisu:</string><string name="labelZapisaneGry">Zapisane gry : </string><string name="title_activity_database">DatabaseActivity</string>
+    
+    
+    
+    
+
+</resources>

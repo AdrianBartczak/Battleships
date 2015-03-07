@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/introbg"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+         />
+
+    <Button
+        android:id="@+id/btnBazaDanych"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/zapisz"
+        android:layout_alignBottom="@+id/zapisz"
+        android:layout_toRightOf="@+id/zapisz"
+        android:onClick="bazaDanych"
+        android:text="@string/labelbazadanych" />
+
+    <Button
+        android:id="@+id/zapisz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginLeft="57dp"
+        android:onClick="nowaGra"
+        android:text="@string/nowagra" />
+
+</RelativeLayout>
